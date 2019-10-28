@@ -1,0 +1,100 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+.resumePage{
+    background-color: #f4f1f8;
+    float: right;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.resumePage p{
+    margin-left: 10px;
+}
+.resumePage h1{
+    background-color: #efe9f4;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 0;
+
+}
+
+.resumePage h2{
+    font-size: 110%;
+    margin-left: 5px;
+}
+
+.resumePage h3{
+    margin-left: 3px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#08b2e3;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkBox {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.linkBox a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: cornsilk;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.linkBox a:hover{
+    color: peachpuff;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.Bar{
+    margin-left: 20px;
+    width: 340px;
+    height: 30px;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.Bar::before{
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: calc(var(--cur, 0) * 1%);
+    background-color: greenyellow;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+    .resumePage{
+        width: 100%;
+    }
+}
