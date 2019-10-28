@@ -90,7 +90,7 @@ img{
     padding: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (orientation:portrait) {
     .sidebar{
         display: none;
     }
