@@ -39,7 +39,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color:#08b2e3;
+    background-color:#123c69;
     overflow: hidden;
 }
 
@@ -81,12 +81,13 @@ img{
 }
 
 .Bar::before{
+    height: 100%;
     content: attr(data-label);
     display: flex;
     align-items: center;
     position: relative;
     width: calc(var(--cur, 0) * 1%);
-    background-color: greenyellow;
+    background-color: #40DE7B;
     padding: 5px;
 }
 
