@@ -31,6 +31,19 @@ body {
     margin-left: 3px;
 }
 
+.resumePage a.glyphLink:link{
+    color: black;
+    text-decoration: none;
+}
+.resumePage a.glyphLink:active{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.resumePage a.glyphLink:visited{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
 .sidebar {
     height: 100%;
     width: 20%;
@@ -50,6 +63,21 @@ img{
     margin-right: auto;
 }
 
+.linkBar{
+    margin-top: 25px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.linkBar a {
+    color: cornsilk;
+    display: inline-block;
+    margin: 0.3em;
+}
+
+.linkBar a:active {
+    color: gray;
+}
 .linkBox {
     position: absolute;
     top: 50%;

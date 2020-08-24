@@ -6,8 +6,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="NavBarScroller.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-<body>
+    <body>
 
         <div class="resumePage" id="me">
             <h1>About me</h1>
@@ -20,11 +21,11 @@
             <h3>Wentworth Institute of Technology | Class of 2021</h3>
             <h2>BS in Computer Science</h2>
             <p><b>Cummulative GPA:</b></p>
-            <div class ="Bar" data-cap="90.0" data-label="3.59/4.0" style="--cur: 0" ></div>
+            <div class ="Bar" data-cap="91.25" data-label="3.65/4.0" style="--cur: 0" ></div>
             <p><b>Major GPA:</b></p>
-            <div class ="Bar" data-cap="94.0" data-label="3.76/4.0" style="--cur: 0" ></div>
-            <p><b>Relevant courses:</b> <br> Algorithms, Data Structures, Network Programming, Databases, Computer Organization</p> 
-            <p><b>Awards:</b> <br> Dean's List recepient in Spring 2018, Fall 2018, Spring 2019, Fall 2019 semesters</p> 
+            <div class ="Bar" data-cap="95.25" data-label="3.81/4.0" style="--cur: 0" ></div>
+            <p><b>Relevant courses:</b> <br> Machine Learning, Operating Systems, Programming Languages, Algorithms, Data Structures, Network Programming</p> 
+            <p><b>Awards:</b> <br> Dean's List recepient in Spring 2018, Fall 2018, Spring 2019, Fall 2019, Summer 2020 semesters</p> 
         </div>   
 
         <div class="resumePage" id="exp">
@@ -35,7 +36,7 @@
             
             
             <h3>ARTLAB LEBANON (May - July 2019)</h3>
-            <h2 style="margin-top: 10px"><i>Software Engineer</i></h2>
+            <h2 style="margin-top: 10px"><i>Technical Specialist</i></h2>
             <p style="text-indent: 20px">During the summer of 2019 I worked closely with ARTLAB's Tarek Mourad in order to program, construct and maintain his installation, the <a href="https://www.dailystar.com.lb/Arts-and-Ent/Culture/2019/Jul-10/487183-cave-art-to-crashing-computers-dealing-with-the-human-form.ashx">Automatic Art Validation Machine</a>. The AAVM was comprised of a computer and printer that would passively scan and print recently posted pictures under a predifined hashtag on Instagram on a sheet of paper with the caption "Is this art?" before allowing it to fall on the floor. I wrote the installation's program in python and made heavy use of the requests and beautifulsoup APIs in order to automatically look at hashtags and retrieve recent photos, as well as the win32UI and win32print APIs in order to prepare and print the picture and caption on a sheet of paper.</p>
                 
     </div>
@@ -46,19 +47,33 @@
             <h3>Gotchi (Ongoing)</h3>
             <ul>
                 <li>Developing a mobile pet simulator game made in Unity to be released on the App store and Google play.</li>
-                <li>ses Fitness data as in game currency, makes REST calls to Google Fit web API.</li>
+                <li>Usses Fitness data as in game currency, makes REST calls to Google Fit web API.</li>
             </ul>
-            <h3>Leapfrog</h3>
+            <h3>Squiggle<a href="https://github.com/omarnassif98/Squiggle/blob/master/Squiggle.ipynb" style="margin-left: 0.5em;" class="glyphLink" target="_blank"><i class="fa fa-github"></i></a></h3>
+            <ul>
+                <li>ML-enabled python program that is able to read user’s handwriting from a photo.</li>
+                <li>Random forest model fit with handwriting data from EMNIST, incoming user data is processed using opencv2.</li>
+            </ul>
+            <h3><a href="https://webdex-hpxjgelhjq-ue.a.run.app/">Webdex</a><a href="https://github.com/omarnassif98/Flask-pokedex" style="margin-left: 0.5em;" class="glyphLink" target="_blank"><i class="fa fa-github"></i></a></h3>
+            <ul>
+                <li>A fully featured pokedex web application that allows for querying pokemon by type and generation.</li>
+                <li>Uses flask for its backend, delivers queries to page via REST, runs on a cloud hosted Docker container.</li>
+            </ul>
+            <h3>Leapfrog (unpublished paper)</h3>
             <ul>
                 <li>Library built in Python to simulate and record the performance of news cycles in social media.</li>
                 <li>Operates with networkx graphs and outputs visualizations using MatplotLib.</li>
             </ul>
-            <h3>AAVM</h3>
+            <h3>AAVM<a href="https://github.com/omarnassif98/AAVM/blob/master/AAVM.py" style="margin-left: 0.5em;" class="glyphLink" target="_blank"><i class="fa fa-github"></i></a></h3>
             <ul>
                 <li>A web scraper in python that passively prints the latest Instagram photos posted to a hashtag.</li>
                 <li>Uses requests and beautifulsoup to fetch photos, win32ui and win32print to print the photos.</li>
             </ul>
-            <h3>Whatsupp</h3>
+            <h3>Dynamic Splitscreen<a href="https://github.com/omarnassif98/Dynamic-splitscreen" style="margin-left: 0.5em;" class="glyphLink" target="_blank"><i class="fa fa-github"></i></a></h3>
+            <ul>
+                <li>Proof of concept for Splitscreen functionality that dynamically changes screen layout depending on where players are in relation to eachother.</li>
+                <li>Developed in Unity. Behaviour scripts written in C#, Shader written in HLSL.</li>
+            </ul><h3>Whatsupp</h3>
             <ul>
                 <li>Server-Client socket based chat service built as final project in Network Programming.</li>
                 <li>Makes of multi-threading to support multiple chat rooms per client, supports media sharing.</li>
@@ -71,12 +86,14 @@
         </div>
         <div class="resumePage" id="skill">
             <h1>Skills</h1>
+            <h3>Concepts</h3>
+            <p>Web development, Machine Learning, Data Analysis, UI/UX, Game Development</p>
+            <h3>Frameworks</h3>
+            <p>Flask, jinja2, Redis, Docker, Scikit-learn, Matplotlib, UnityEngine</p>
             <h3>Programming languages:</h3>
-            <p>C#, Java, Python, Matlab, R, C, SQL, Javascript</p>
-            <h3>Conceptual applications:</h3>
-            <p>Object Oriented Programming, Socket Programming, Sorted and Unsorted Data Structures, Relational Databases, Raycasting, Debugging</p>
+            <p>Python, C#, Java, C, HTML/CSS, Javascript, Matlab</p>
             <h3>Interpersonal skills:</h3>
-            <p>Communication, Task delegation, Leadership, Public Speaking</p>
+            <p>Planning, Attention to Detail, Communication, Time Management, Organization</p>
 
         </div>
         <div class="resumePage" id="act">
@@ -106,17 +123,22 @@
                 
         </div>
     
-<div class="sidebar">
-    <img src="Headshot.png" alt="Me" height="150" width="150" style="margin-top: 75px;">
-    <div class="linkBox">
-        <a href="#me">About me</a>
-        <a href="#edu">Education</a>
-        <a href="#exp">Employment History</a>
-        <a href="#proj">Projects</a>
-        <a href="#skill">Skills</a>
-        <a href="#act">Activities</a>
-    </div>
-</div>
+        <div class="sidebar">
+            <img src="Headshot.png" alt="Me" height="150" width="150" style="margin-top: 75px;">
+            <div class="linkBar" style="display: inline; margin-left: auto; margin-right: auto;">
+                <a href="https://www.linkedin.com/in/omarnassif/" target="_blank"><i class="fa fa-linkedin" style="font-size:20px"></i></a>
+                <a href="https://github.com/omarnassif98" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a>
+                <a href="https://www.instagram.com/omaranassif/" target="_blank"><i class="fa fa-instagram" style="font-size:20px"></i></a>
+            </div>
+            <div class="linkBox">
+                <a href="#me">About me</a>
+                <a href="#edu">Education</a>
+                <a href="#exp">Employment History</a>
+                <a href="#proj">Projects</a>
+                <a href="#skill">Skills</a>
+                <a href="#act">Activities</a>
+            </div>
+        </div>
 
-</body>
+    </body>
 </html>
